@@ -1,0 +1,193 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+#btnparent{
+    background-color: #0000ff;
+} */
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+}
+
+/* Main Container */
+.main-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    color: #d4a017;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #b58900;
+    margin-bottom: 20px;
+}
+
+/* Content */
+.course-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Course Container */
+#available-courses {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center child elements horizontally */
+    max-width: 60%;
+}
+
+/* Course Item */
+#available-courses div {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+/* Flex Container for Alert and Button */
+#available-courses div > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Alert Styling */
+#alert {
+    /* width: 4px;
+    height: 20px; */
+    background-color: red; /* Example color */
+    margin-right: 10px;
+}
+
+/* Button Styling */
+#available-courses div button {
+    background-color: #e0c200;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#available-courses div button:hover {
+    background-color: #fff;
+    color: #e0c200;
+}
+
+/* Info Section */
+.info-section {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+.info-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.available {
+    background-color: #0000ff; /* Blue */
+}
+
+.not-available {
+    background-color: #ff0000; /* Red */
+}
+
+.registered {
+    background-color: #008000; /* Green */
+}
+
+/* Note Section */
+.note {
+    max-width: 300px;
+    background-color: #fffbe6;
+    border: 1px solid #e0c200;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note p {
+    color: #666;
+    font-size: 14px;
+}
+
+.headings {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@keyframes blink-green {
+    0%, 100% { background-color: green; }
+    50% { background-color: transparent; }
+}
+
+@keyframes blink-blue {
+    0%, 100% { background-color: blue; }
+    50% { background-color: transparent; }
+}
+
+@keyframes blink-red {
+    0%, 100% { background-color: red; }
+    50% { background-color: transparent; }
+}
+
+.blink-green {
+    animation: blink-green 1s 2; /* Runs the animation for 1 second and repeats it 3 times */
+}
+
+.blink-blue {
+    animation: blink-blue 1s 2; /* Rus the animation for 1 second and repeats it 3 times */
+}
+
+.blink-red {
+    animation: blink-red 1s 2; /*s Runs the animation for 1 second and repeats it 3 times */
+}
+
+@keyframes blink3 {
+    0% { background-color: red; }
+    50% { background-color: transparent; }
+    100% { background-color: red; }
+}
+
+.blink3 {
+    animation: blink 500ms 2;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List</title>
+  <link rel="stylesheet" href="./students.css">
+</head>
+<body>
+  <h1>My Students</h1>  <div id="student-list" class="student-list"></div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-popup">&times;</span>
+      <div id="popup-content"></div>
+    </div>
+  </div>
+
+  <div id="edit-popup" class="edit-popup">
+    <div class="popup-content">
+      <form id="edit-form">
+        <label for="marks">Marks:</label>
+        <input type="number" id="marks" name="marks" min="0" max="100" required>
+        <button id="edit-submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="marksModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Marks</h1>
+        <div id="marksContainer"></div>
+    </div>
+</div>
+
+  <script src="./students.js"></script>
+</body>
+</html>

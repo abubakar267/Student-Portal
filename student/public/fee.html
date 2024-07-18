@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Challan</title>
+    <link rel="stylesheet" href="fee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="challan-header">
+            <h1>Fee Challan</h1>
+            <p>Date: <span id="challan-date"></span></p>
+        </div>
+        <div class="student-info">
+            <p>Student Name: <span id="student-name"></span></p>
+            <p>Student ID: <span id="student-id"></span></p>
+        </div>
+        <div class="courses-table">
+            <h2>Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                        <th>Rate per Credit Hour</th>
+                        <th>Total Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="courses-list">
+                    <!-- Dynamic Course Rows -->
+                </tbody>
+            </table>
+        </div>
+        <div class="total-fee">
+            <h2>Total Fee: <span id="total-fee"></span></h2>
+        </div>
+        <button class="print-button" onclick="printChallan()">Print Challan</button>
+    </div>
+    <script src="fee.js"></script>
+</body>
+</html>

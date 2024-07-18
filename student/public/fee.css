@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.challan-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.challan-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.challan-header p {
+    font-size: 1em;
+    color: #666;
+}
+
+.student-info {
+    margin-bottom: 20px;
+}
+
+.student-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.courses-table {
+    margin-bottom: 20px;
+}
+
+.courses-table h2 {
+    margin: 0 0 10px 0;
+}
+
+.courses-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.courses-table th,
+.courses-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.courses-table th {
+    background-color: #f4f4f4;
+}
+
+.total-fee {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.total-fee h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.print-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e0c200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color:#fff;
+    color: #e0c200;
+}

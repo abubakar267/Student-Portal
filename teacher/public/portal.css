@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* Added property for centering */
+   
+    align-items: center;
+    min-height: 100vh; /* Ensures centering works on all screen heights */
+  }
+  
+  header.header {
+    
+    color: #b58900;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30vh;
+    
+  }
+  
+  main.main {
+    padding: 1rem;
+    display: flex;
+    
+  }
+  
+  section.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    /* Removed properties for equal-sized boxes (handled by flex in body) */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+   
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    /* Removed properties for equal-sized boxes (handled by flex in body) */
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.8rem;
+    color: #b58900;
+   
+  }
+
+  a{
+     color: #b58900;
+  }
+  

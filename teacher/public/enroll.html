@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./enroll.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1>Course Registration</h1>
+    <h2>Available Course</h2>
+
+    <div class="course-content">
+        <p class="note">Note: A course can only be registered if there is a teacher assigned to that course.</p>
+    <div id="available-courses">
+    </div>
+
+
+    <div class="info-section">
+        <div style="display: flex;"> 
+        <div class="info-box available"></div>
+        <p style="position: relative; top:2px; left:10px">Already Enrolled</p>
+        </div>
+
+        <div style="display: flex;"> 
+            <div class="info-box not-available"></div>
+            <p style="position: relative; top:2px; left:10px">Limit Reached</p>
+            </div>
+
+
+        <div style="display: flex;"> 
+            <div class="info-box registered"></div>
+            <p style="position: relative; top:2px; left:10px">Enrolled Successfully</p>
+        </div>
+
+    </div>
+</div>
+    <script src="enroll.js"></script>
+</body>
+</html>
